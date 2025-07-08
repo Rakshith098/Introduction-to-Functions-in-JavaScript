@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope of Variables in Functions</title>
+</head>
+<body>
+    <button onclick="Value()">Click Me!</button>
+    <p id="Tester"></p>
+    <p id="Test"></p>
+    <p id="Test2"></p>
+
+    <script>
+        var a=8
+        function Value()
+        {
+            var b=25
+            document.getElementById("Tester").innerHTML= b*a
+        }
+        document.getElementById("Test").innerHTML= a
+        document.getElementById("Test2").innerHTML= b
+    </script>
+</body>
+</html>
